@@ -2,6 +2,7 @@ import React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BlogProvider } from './contexts/BlogContext';
+import { BrowserRouter } from 'react-router-dom';
 
 // Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,7 +17,9 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <BlogProvider>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </BlogProvider>
   </StrictMode>
 );

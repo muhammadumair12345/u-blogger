@@ -1,11 +1,17 @@
 import React from 'react';
 import './style.css';
+import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello Blog</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Routes>
+
+    <Route path="/" element={<Home />}/>
+      <Route path="create-blog" element={<CreateBlog />}>
+      <Route path="blogs" element={<Blogs />}>
+        <Route path=":blogId" element={<Blog />} />
+      </Route>
+    <Routes>
+
   );
 }

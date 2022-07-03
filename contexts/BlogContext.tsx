@@ -4,7 +4,7 @@ import axios from 'axios';
 import BlogReducer from '../reducers/BlogReducer';
 
 const API = axios.create({
-  baseURL: 'https://pro-mapper-api.herokuapp.com/',
+  baseURL: 'https://blogger-api.herokuapp.com/',
 });
 
 export const BlogContext = createContext('');
