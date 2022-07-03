@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Home = () => {
-  return <div>
-   
-  </div>;
+  return <div className="bg-image"></div>;
 };
 
 export default Home;
