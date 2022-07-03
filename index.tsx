@@ -1,6 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BlogProvider } from './contexts/BlogContext';
+
 // Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Bootstrap Bundle JS
@@ -13,6 +15,8 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App />
+    <BlogProvider>
+      <App />
+    </BlogProvider>
   </StrictMode>
 );
