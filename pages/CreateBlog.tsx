@@ -23,6 +23,7 @@ const CreateBlog = () => {
           name="username"
           className="form-control"
           id="username"
+          required
           placeholder="Username"
         />
       </div>
@@ -33,6 +34,7 @@ const CreateBlog = () => {
           name="category"
           className="form-control"
           id="category"
+          required
           placeholder="Category"
         />
       </div>
@@ -43,6 +45,7 @@ const CreateBlog = () => {
           name="description"
           className="form-control"
           id="description"
+          required
           placeholder="Description"
         />
       </div>
